@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/blankView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="35"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/dogView"/>
+    <TextView
+        android:id="@+id/dogView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="          Dog"
+        android:textSize="50dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tagView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blankView"
+        app:layout_constraintVertical_weight="10"/>
+    <TextView
+        android:id="@+id/tagView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="               Tag"
+        android:textSize="50dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/addDog"
+        app:layout_constraintTop_toBottomOf="@+id/dogView"
+        app:layout_constraintVertical_weight="40" />
+    <Button
+        android:id="@+id/addDog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAllCaps="false"
+        android:text="Create Dog QR Code"
+        app:layout_constraintBottom_toTopOf="@+id/scanCode"
+        app:layout_constraintTop_toBottomOf="@+id/tagView"
+        app:layout_constraintVertical_weight="10" />
+    <Button
+        android:id="@+id/scanCode"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAllCaps="false"
+        android:text="Scan Dog Tag"
+        app:layout_constraintTop_toBottomOf="@+id/addDog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_weight="10"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
