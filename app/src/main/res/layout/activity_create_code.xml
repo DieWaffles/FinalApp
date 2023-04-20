@@ -25,6 +25,7 @@
         app:layout_constraintTop_toBottomOf="@+id/TopNameView"
         app:layout_constraintVertical_weight="25" />
     <EditText
+        android:hint="FirstName LastName"
         android:id="@+id/OwnerName"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -46,6 +47,7 @@
         app:layout_constraintTop_toBottomOf="@+id/fNameLName"
         app:layout_constraintVertical_weight="25" />
     <EditText
+        android:hint="###-###-####"
         android:id="@+id/NumField"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -77,6 +79,7 @@
         app:layout_constraintTop_toBottomOf="@+id/NumField" />
 
     <EditText
+        android:hint="Street, City, State, Zip"
         android:id="@+id/ownerAddressEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -86,7 +89,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addressText" />
+        app:layout_constraintTop_toBottomOf="@+id/addressText"
+        app:layout_constraintBottom_toBottomOf=""/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
